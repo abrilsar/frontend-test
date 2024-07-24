@@ -33,7 +33,21 @@ module.exports = {
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
       fontFamily: {
-        sans: ['var(--font-sans)', ...fontFamily.sans],
+        sans: ['Inter', ...fontFamily.sans],
+        // sans: ['var(--font-sans)', ...fontFamily.sans],
+      },
+      colors: {
+        buttomColor: {
+          100: '#7F56D9', // El de los botones
+          200: '#724dc3', // hover
+        },
+        primaryColor: '#53389E',
+        secondaryColor: '#6941C6',
+        subtitleColor: {
+          100: '#F9F5FF', //background
+          200: '#E9D7FE', //border
+        },
+        bgColor: '#FFFFFF',
       },
     },
   },
