@@ -1,4 +1,3 @@
-import { z } from 'zod';
 import { getFetch } from '@/lib/api';
 
 export async function getUsers(options?: RequestInit) {

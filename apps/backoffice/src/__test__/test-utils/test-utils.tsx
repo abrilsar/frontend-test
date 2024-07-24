@@ -2,7 +2,6 @@ import React from 'react';
 import userEvent from '@testing-library/user-event';
 import { render, RenderOptions } from '@testing-library/react';
 import { QueryProvider } from '@/context/query-context';
-import { QueryClientProvider } from '@tanstack/react-query';
 
 // mock @apollo/experimental-nextjs-app-support/rsc
 jest.mock('@apollo/experimental-nextjs-app-support/rsc', () => ({

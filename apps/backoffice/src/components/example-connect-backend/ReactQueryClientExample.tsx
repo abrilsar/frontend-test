@@ -1,6 +1,5 @@
 'use client';
 
-import React from 'react';
 import { useUsers } from '@/services/user/hooks';
 
 interface ReactQueryClientProps {
