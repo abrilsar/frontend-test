@@ -33,11 +33,10 @@ module.exports = {
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
       fontFamily: {
-        sans: ['Inter', ...fontFamily.sans],
-        // sans: ['var(--font-sans)', ...fontFamily.sans],
+        sans: ['var(--font-sans)', ...fontFamily.sans],
       },
       colors: {
-        buttomColor: {
+        buttonColor: {
           100: '#7F56D9', // El de los botones
           200: '#724dc3', // hover
         },

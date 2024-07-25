@@ -59,7 +59,7 @@ export default function Card({ customClass }: CardProps) {
             <img
               alt=""
               src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-              className={`${customClass ? 'size-6' : 'size-9'}`}
+              className={`${customClass ? 'w-6 h-6' : 'w-9 h-9'}`}
             />
             {/* <CalendarDaysIcon aria-hidden="true" className="h-6 w-6 text-black" /> */}
           </div>
