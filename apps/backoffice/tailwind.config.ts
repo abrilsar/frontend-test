@@ -35,6 +35,9 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-sans)', ...fontFamily.sans],
       },
+      fontSize: {
+        tiny: '9px',
+      },
       colors: {
         buttonColor: {
           100: '#7F56D9', // El de los botones

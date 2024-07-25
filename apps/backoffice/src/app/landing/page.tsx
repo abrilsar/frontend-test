@@ -2,6 +2,7 @@ import Card from '@/components/card/Card';
 import Stats from '@/components/stats/Stats';
 import CustomButton from '@/components/custom-button/CustomButton';
 import Input from '@/components/input/Input';
+import Footer from '@/components/footer/Footer';
 // import Navbar from "@/components/navbar/Navbar";
 // import Title from "@/components/title/Title";
 
@@ -17,7 +18,8 @@ export default function Landing() {
             ></Title> */}
       {/* <Card></Card> */}
       {/* <Stats></Stats> */}
-      <Input></Input>
+      {/* <Input></Input> */}
+      <Footer></Footer>
     </div>
   );
 }
