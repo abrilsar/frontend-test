@@ -3,12 +3,14 @@ import Stats from '@/components/stats/Stats';
 import CustomButton from '@/components/custom-button/CustomButton';
 import Input from '@/components/input/Input';
 import Footer from '@/components/footer/Footer';
+import ImageCard from '@/components/image-card/ImageCard';
+import QuestionField from '@/components/question-field/QuestionField';
 // import Navbar from "@/components/navbar/Navbar";
 // import Title from "@/components/title/Title";
 
 export default function Landing() {
   return (
-    <div>
+    <div className="flex justify-center items-center">
       {/* <CustomButton title="Learn more" custom={false}></CustomButton> */}
 
       {/* <Title
@@ -19,7 +21,9 @@ export default function Landing() {
       {/* <Card></Card> */}
       {/* <Stats></Stats> */}
       {/* <Input></Input> */}
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
+      {/* <ImageCard></ImageCard> */}
+      <QuestionField></QuestionField>
     </div>
   );
 }
