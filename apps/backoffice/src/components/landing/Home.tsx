@@ -58,7 +58,7 @@ export default function Home() {
             subtitle="Integrations"
           ></Title>
           <div className="py-8">
-            <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 lg:mx-0 lg:max-w-none sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mx-auto grid max-w-3xl grid-cols-1 gap-x-8 gap-y-12 lg:mx-0 lg:max-w-none sm:grid-cols-2 lg:grid-cols-3">
               {integrations.map((integration, key) => (
                 <Card
                   key={key}
@@ -80,7 +80,6 @@ export default function Home() {
             <Stats></Stats>
           </div>
         </div>
-
         {/* 4 Secction */}
         <div className="flex flex-col justify-center py-5">
           <Title
@@ -89,7 +88,7 @@ export default function Home() {
             subtitle="Features"
           ></Title>
           <div className="py-8">
-            <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 lg:mx-0 lg:max-w-none sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mx-auto grid max-w-3xl grid-cols-1 gap-x-8 gap-y-12 lg:mx-0 lg:max-w-none sm:grid-cols-2 lg:grid-cols-3">
               {Features.map((feature, key) => (
                 <Card
                   key={key}
@@ -241,13 +240,13 @@ export default function Home() {
         </div>
         {/* 9 section */}
         <div className="mt-10 max-w-7xl mb-10 ">
-          <div className="mx-auto max-w-7xl rounded-l-2xl rounded-r-3xl sm:grid sm:grid-cols-2 lg:max-w-none bg-primaryColor">
+          <div className="mx-auto max-w-7xl rounded-2xl sm:rounded-r-3xl sm:grid sm:grid-cols-2 lg:max-w-none bg-primaryColor">
             <div className="flex items-center justify-center py-4 sm:justify-start sm:p-8 md:pr-0 sm:py-20 lg:py-32 lg:pl-14">
               <div className="flex flex-col items-center sm:items-start sm:max-w-6xl py-6 sm:py-0">
                 <h1 className="text-3xl font-semibold tracking-tight text-bgColor sm:text-[35px]">
                   Give us a shot
                 </h1>
-                <p className="flex justify-start  text-base sm:text-base lg:text-xl text-bgColor font-light mt-5 px-3 sm:px-0 text-center sm:text-start">
+                <p className="flex justify-start  text-base lg:text-lg text-bgColor font-light mt-5 px-4 sm:px-0 text-center sm:text-start">
                   Join over 4,000+ startups already growing with Untitled.
                 </p>
                 <div className="flex flex-row mt-8 lg:mt-14 gap-x-3">
@@ -262,9 +261,9 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center sm:justify-start pb-10 sm:pb-0 sm:pl-10 md:pl-20 lg:pl-28">
+            <div className="flex justify-center sm:justify-start sm:pb-0 sm:pl-10 md:pl-20 lg:pl-28">
               {/* <div className="rounded-r-2xl bg-gray-300 w-full h-full"> */}
-              <div className="aspect-h-1 aspect-w-1 w-[70%] h-64 sm:w-full sm:h-full overflow-hidden col-span-1 p-2 sm:rounded-r-2xl sm:rounded-l-none">
+              <div className="aspect-h-1 aspect-w-1 h-64 w-full sm:h-full overflow-hidden col-span-1 p-2 rounded-t-none rounded-b-2xl sm:rounded-r-2xl sm:rounded-l-none">
                 <img
                   alt="picture office"
                   src="picture_office.jpg"
@@ -275,36 +274,31 @@ export default function Home() {
             </div>
           </div>
         </div>
+        {/* 10 Section */}
+        <div className="mt-28">
+          <Footer></Footer>
+        </div>
+
+        {/* Final */}
+        <div className="flex justify-end flex-col items-end gap-y-3 sm:flex-row sm:justify-between pb-12 pt-4 sm:pt-8 border-t-[1px] border-gray-200">
+          <div className="flex gap-3 items-center">
+            <a href="#" className="-m-1.5 p-1.5">
+              <span className="sr-only">Your Company</span>
+              <img
+                alt=""
+                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                className="h-6 w-auto"
+              />
+            </a>
+            <p className="text-base lg:text-xl text-gray-900 font-semibold leading-6">
+              Untitle UI
+            </p>
+          </div>
+          <div className="flex justify-center items-center w-fit font-normal text-xs lg:text-base text-[#667085]">
+            © 2077 Untitled UI. All rights reserved.
+          </div>
+        </div>
       </div>
     </div>
   );
-}
-
-{
-  /* <CustomButton title="Learn more" custom={false}></CustomButton> */
-}
-
-{
-  //
-}
-{
-  /* <Card></Card> */
-}
-{
-  /* <Stats></Stats> */
-}
-{
-  /* <Input></Input> */
-}
-{
-  /* <Footer></Footer> */
-}
-{
-  /* <ImageCard></ImageCard> */
-}
-{
-  /* <ImageCard></ImageCard> */
-}
-{
-  /* <QuestionField></QuestionField> */
 }

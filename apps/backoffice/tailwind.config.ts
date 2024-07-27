@@ -36,7 +36,7 @@ module.exports = {
         sans: ['var(--font-sans)', ...fontFamily.sans],
       },
       fontSize: {
-        tiny: '9px',
+        tiny: '6px',
       },
       maxWidth: {
         xl2: '44rem', // Tamaño intermedio

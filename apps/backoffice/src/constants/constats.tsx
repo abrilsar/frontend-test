@@ -102,3 +102,75 @@ export const questions = [
       " Yes, you can try us for free for 30 days. If you want, we'll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.",
   },
 ];
+
+export const apps = [
+  {
+    name: 'App Store',
+    logoUrl:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNw7QG9ltH125HUWoX0GoIi5_d3zGvmJc2zg&s',
+    subtitle: 'Download on The',
+  },
+  {
+    name: 'Google Play',
+    logoUrl: 'https://cdn-icons-png.flaticon.com/512/732/732208.png',
+    subtitle: 'GET IN ON',
+  },
+];
+
+export const sectionFooter = [
+  {
+    name: 'Product',
+    items: [
+      { name: 'Overview', href: '#', new: false },
+      { name: 'Features', href: '#', new: false },
+      { name: 'Solutions', href: '#', new: true },
+      { name: 'Tutorials', href: '#', new: false },
+      { name: 'Pricing', href: '#', new: false },
+      { name: 'Releases', href: '#', new: false },
+    ],
+  },
+  {
+    name: 'Company',
+    items: [
+      { name: 'About us', href: '#', new: false },
+      { name: 'Careers', href: '#', new: false },
+      { name: 'Press', href: '#', new: false },
+      { name: 'News', href: '#', new: false },
+      { name: 'Media kit', href: '#', new: false },
+      { name: 'Contact', href: '#', new: false },
+    ],
+  },
+  {
+    name: 'Resources',
+    items: [
+      { name: 'Blog', href: '#', new: false },
+      { name: 'Newsletter', href: '#', new: false },
+      { name: 'Events', href: '#', new: false },
+      { name: 'Help centre', href: '#', new: false },
+      { name: 'Tutorials', href: '#', new: false },
+      { name: 'Support', href: '#', new: false },
+    ],
+  },
+  {
+    name: 'Social',
+    items: [
+      { name: 'Twitter', href: '#', new: false },
+      { name: 'LinkedIn', href: '#', new: false },
+      { name: 'Facebook', href: '#', new: false },
+      { name: 'GitHub', href: '#', new: false },
+      { name: 'AngelList', href: '#', new: false },
+      { name: 'Dribbble', href: '#', new: false },
+    ],
+  },
+  {
+    name: 'Legal',
+    items: [
+      { name: 'Terms', href: '#', new: false },
+      { name: 'Privacy', href: '#', new: false },
+      { name: 'Cookies', href: '#', new: false },
+      { name: 'Licenses', href: '#', new: false },
+      { name: 'Settings', href: '#', new: false },
+      { name: 'Contact', href: '#', new: false },
+    ],
+  },
+];

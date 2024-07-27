@@ -25,7 +25,9 @@ export default function Card({
           )}
           {/* <CalendarDaysIcon aria-hidden="true" className="h-6 w-6 text-black" /> */}
         </div>
-        <dt className="mt-4 font-semibold text-xl text-gray-900">{name}</dt>
+        <dt className="mt-4 font-semibold text-xl text-gray-900 text-center">
+          {name}
+        </dt>
         <dd className="mt-2 leading-7 text-base text-center text-gray-600">
           {description}
         </dd>
