@@ -38,6 +38,9 @@ module.exports = {
       fontSize: {
         tiny: '9px',
       },
+      maxWidth: {
+        xl2: '44rem', // Tamaño intermedio
+      },
       colors: {
         buttonColor: {
           100: '#7F56D9', // El de los botones

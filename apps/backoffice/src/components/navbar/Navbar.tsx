@@ -18,10 +18,10 @@ export default function Navbar() {
   return (
     <header className="relative inset-x-0 top-0 z-50">
       <Disclosure as="nav">
-        <div>
+        <div className="flex justify-center">
           <nav
             aria-label="Global"
-            className="flex items-center justify-between h-20 p-6 lg:px-8"
+            className="flex items-center w-11/12 justify-between h-20 p-4 lg:px-0"
           >
             {/* AQUI */}
             <div className="flex items-center lg:flex-3 lg:gap-10">
