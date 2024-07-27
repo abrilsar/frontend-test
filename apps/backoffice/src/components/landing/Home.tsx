@@ -8,12 +8,13 @@ import QuestionField from '@/components/question-field/QuestionField';
 // import Navbar from "@/components/navbar/Navbar";
 import Title from '@/components/title/Title';
 import { Features, integrations, questions } from '@/constants/constats';
-import { CheckIcon } from '@heroicons/react/24/outline';
+import { StarIcon } from '@heroicons/react/20/solid';
+import { MinusIcon } from '@heroicons/react/24/outline';
 
 export default function Home() {
   return (
     <div className="flex justify-center">
-      <div className="bg-bgColor w-11/12">
+      <div className="bg-bgColor w-[94%]">
         <div className="relative isolate px-4 lg:px-0">
           {/* First Section */}
           <div className="mb-[80%] sm:mb-[45%] lg:mb-[40%]">
@@ -102,6 +103,44 @@ export default function Home() {
           </div>
           {/* </div> */}
         </div>
+        {/*5 Seccion  */}
+        <div className="mt-6 mb-36">
+          <div className="mt-10 max-w-7xl mb-10 ">
+            <div className="mx-auto max-w-7xl rounded-2xl sm:rounded-r-3xl sm:flex sm:flex-cols lg:max-w-none bg-primaryColor">
+              <div className="flex justify-center sm:justify-start sm:pb-0 sm:w-[65%] md:w-[44%] lg:w-[40%]">
+                <div className="aspect-h-1 aspect-w-1 h-64 w-full sm:h-full overflow-hidden col-span-1 p-2 rounded-t-none rounded-b-2xl sm:rounded-l-2xl sm:rounded-r-none">
+                  <img
+                    alt="picture blonde"
+                    src="picture_blonde.jpg"
+                    className="object-cover object-center w-full"
+                  />
+                </div>
+              </div>
+              <div className="flex items-center justify-center py-4 sm:justify-start sm:pl-10 lg:pl-16 sm:py-20 md::py-24 lg:py-24 flex-grow">
+                <div className="flex flex-col items-center sm:items-start sm:max-w-2xl py-6 sm:py-0 flex-grow">
+                  <div className="flex felx-col gap-x-2 pb-4">
+                    {Array.from({ length: 5 }, (_, index) => (
+                      <StarIcon key={index} className="size-5 text-[#FDB022]" />
+                    ))}
+                  </div>
+                  <h1 className="text-3xl font-medium tracking-tight text-bgColor sm:text-4xl sm:max-w-[37rem] leading-tight">
+                    Love the simplicity of the service and the prompt customer
+                    support. We can't imagine working without it.
+                  </h1>
+                  <div className="flex flex-col gap-y-1 mt-6 lg:mt-12">
+                    <h4 className="text-bgColor font-semibold text-lg">
+                      — Renee Wells
+                    </h4>
+                    <p className="font-normal text-bgColor text-base">
+                      Product Designer, Quotient
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* 6 Section */}
         {/* <div className="relative overflow-hidden bg-white mt-11"> */}
         <div className="h-[500px]">
@@ -241,7 +280,7 @@ export default function Home() {
         {/* 9 section */}
         <div className="mt-10 max-w-7xl mb-10 ">
           <div className="mx-auto max-w-7xl rounded-2xl sm:rounded-r-3xl sm:grid sm:grid-cols-2 lg:max-w-none bg-primaryColor">
-            <div className="flex items-center justify-center py-4 sm:justify-start sm:p-8 md:pr-0 sm:py-20 lg:py-32 lg:pl-14">
+            <div className="flex items-center justify-center py-4 sm:justify-start sm:p-8 md:pr-0 sm:py-20 lg:py-28 lg:pl-14">
               <div className="flex flex-col items-center sm:items-start sm:max-w-6xl py-6 sm:py-0">
                 <h1 className="text-3xl font-semibold tracking-tight text-bgColor sm:text-[35px]">
                   Give us a shot

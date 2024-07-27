@@ -21,7 +21,7 @@ export default function Navbar() {
         <div className="flex justify-center">
           <nav
             aria-label="Global"
-            className="flex items-center w-11/12 justify-between h-20 p-4 lg:px-0"
+            className="flex items-center w-[94%] justify-between h-20 p-4 lg:px-0"
           >
             {/* AQUI */}
             <div className="flex items-center lg:flex-3 lg:gap-10">
