@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Carousel } from '@material-tailwind/react';
 import { StarIcon } from '@heroicons/react/20/solid';
 import { sliders } from '@/constants/constats';
+import Starts from '../starts/Starts';
 
 export default function Slider() {
   const [actualImagen, setActualImagen] = useState('picture_blonde.jpg');
@@ -50,14 +51,15 @@ export default function Slider() {
           >
             {sliders.map((slider, key) => (
               <div className="flex flex-col items-center sm:items-start lg:max-w-3xl px-4 py-2 mb-6 sm:mb-10 sm:p-0 sm:pr-2">
-                <div className="flex felx-col gap-x-2 pb-4">
+                {/* <div className="flex felx-col gap-x-2 pb-4">
                   {Array.from({ length: 5 }, (_, index) => (
                     <StarIcon
                       key={index}
                       className="size-4 sm:size-5 text-[#FDB022]"
                     />
-                  ))}
-                </div>
+                //   ))}
+                </div> */}
+                <Starts classNameCustom="pb-4 text-[#FDB022]" number={5} />
                 <h1 className="text-center sm:text-start text-lg font-medium tracking-tight text-white sm:text-xl md:text-2xl lg:text-4xl lg:max-w-[37rem] leading-tight pr-2 lg:pr-0">
                   {slider.text}
                 </h1>

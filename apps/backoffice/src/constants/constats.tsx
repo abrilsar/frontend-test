@@ -195,3 +195,31 @@ export const sliders = [
     position: 'Product Designer, Quotient',
   },
 ];
+
+export const testimonials = [
+  {
+    name: 'Alisa Hester',
+    role: 'PM, Hourglass',
+    agency: 'Web Design Agency',
+    imageUrl: 'picture_yellow_shirt.jpg', // Reemplaza con la URL de la imagen
+  },
+  {
+    name: 'Rich Wilson',
+    role: 'COO, Command+R',
+    agency: 'Web Development Agency',
+    quote: "We've really sped up our workflow using Untitled.",
+    imageUrl: 'picture_corporate.jpeg', // Reemplaza con la URL de la imagen
+  },
+  {
+    name: 'Annie Stanley',
+    role: 'Designer, Catalog',
+    agency: 'UX Agency',
+    imageUrl: 'picture_blonde.jpg', // Reemplaza con la URL de la imagen
+  },
+  {
+    name: 'Johnny',
+    role: 'PM, Sisyphu',
+    agency: 'Machine Learning',
+    imageUrl: 'picture_red_hat.jpg', // Reemplaza con la URL de la imagen
+  },
+];
