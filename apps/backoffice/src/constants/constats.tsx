@@ -174,3 +174,24 @@ export const sectionFooter = [
     ],
   },
 ];
+
+export const sliders = [
+  {
+    img: 'picture_blonde.jpg',
+    text: "Love the simplicity of the service and the prompt customer support. We can't imagine working without it.",
+    author: '— Renee Wells',
+    position: 'Product Designer, Quotient',
+  },
+  {
+    img: 'picture_office.jpg',
+    text: "Love the simplicity of the service and the prompt customer support. We can't imagine working without it.",
+    author: '— Renee Wells',
+    position: 'Product Designer, Quotient',
+  },
+  {
+    img: 'picture_reading.jpg',
+    text: "Love the simplicity of the service and the prompt customer support. We can't imagine working without it.",
+    author: '— Renee Wells',
+    position: 'Product Designer, Quotient',
+  },
+];

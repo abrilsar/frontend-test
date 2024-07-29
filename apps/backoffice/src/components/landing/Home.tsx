@@ -10,6 +10,7 @@ import Title from '@/components/title/Title';
 import { Features, integrations, questions } from '@/constants/constats';
 import { StarIcon } from '@heroicons/react/20/solid';
 import { MinusIcon } from '@heroicons/react/24/outline';
+import Slider from './Slider';
 
 export default function Home() {
   return (
@@ -105,7 +106,7 @@ export default function Home() {
         </div>
         {/*5 Seccion  */}
         <div className="mt-6 mb-36">
-          <div className="mt-10 max-w-7xl mb-10">
+          {/* <div className="mt-10 max-w-7xl mb-10">
             <div className="mx-auto max-w-7xl rounded-2xl sm:rounded-r-3xl sm:flex sm:flex-cols lg:max-w-none bg-primaryColor">
               <div className="flex justify-center sm:justify-start sm:pb-0 sm:w-[65%] md:w-[44%] lg:w-[40%]">
                 <div className="aspect-h-1 aspect-w-1 h-64 w-full sm:h-full overflow-hidden col-span-1 p-2 rounded-t-none rounded-b-2xl sm:rounded-l-2xl sm:rounded-r-none">
@@ -141,7 +142,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
+          <Slider></Slider>
         </div>
 
         {/* 6 Section */}

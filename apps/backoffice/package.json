@@ -24,6 +24,7 @@
     "@vercel/otel": "^1.8.1",
     "@heroicons/react": "^2.1.5",
     "@headlessui/react": "^2.1.2",
+    "@material-tailwind/react": "^2.1.9",
     "avilatek-utils": "^0.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
