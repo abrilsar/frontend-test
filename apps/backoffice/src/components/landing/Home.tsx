@@ -11,6 +11,7 @@ import { Features, integrations, questions } from '@/constants/constats';
 import { StarIcon } from '@heroicons/react/20/solid';
 import { MinusIcon } from '@heroicons/react/24/outline';
 import Slider from './Slider';
+import Carousel from './Carousel';
 
 export default function Home() {
   return (
@@ -319,6 +320,9 @@ export default function Home() {
           </div>
         </div>
         {/* 10 Section */}
+        <div className="my-64">
+          <Carousel></Carousel>
+        </div>
         <div className="mt-28">
           <Footer></Footer>
         </div>
