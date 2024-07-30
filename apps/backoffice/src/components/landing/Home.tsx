@@ -12,6 +12,7 @@ import { StarIcon } from '@heroicons/react/20/solid';
 import { MinusIcon } from '@heroicons/react/24/outline';
 import Slider from './Slider';
 import Carousel from './Carousel';
+import LineChartUsageExample from './Chart';
 
 export default function Home() {
   return (
@@ -47,7 +48,7 @@ export default function Home() {
               </div>
               {/* AQUIII */}
               <div className="absolute top-[calc(92%-10px)] lg:top-[calc(90%-10px)] h-64 sm:h-4/6 w-[70%] sm:w-[55%] lg:w-[67%] bg-white rounded-md p-5 shadow-lg border border-gray-200">
-                <div className="bg-red-400 h-full w-9" />
+                <LineChartUsageExample></LineChartUsageExample>
               </div>
               {/* Agrego absolute y top-full para que se posicione debajo del div anterior */}
             </div>
@@ -168,7 +169,7 @@ export default function Home() {
                 <CustomButton title="Get Started" custom={true}></CustomButton>
               </div>
             </div>
-            <div className="grid grid-rows-2 h-full w-fit  lg:ml-2 overflow-hidden gap-y-4">
+            <div className="grid grid-rows-2 h-full w-fit lg:ml-2 overflow-hidden gap-y-4">
               <div className="row-span-1">
                 <div className="grid grid-cols-2 md:grid-cols-4 md:gap-x-3 w-full h-full gap-x-3">
                   <div className="col-start-1 md:col-start-2 col-span-1 h-full grid grid-rows-1 sm:grid-rows-2">
@@ -216,7 +217,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="col-start-3 col-span-1 h-full grid grid-rows-2 w-full ">
-                    <div className="aspect-video w-full ">
+                    <div className="aspect-video w-full">
                       <img
                         alt="pictures"
                         src="picture_office.jpg"
