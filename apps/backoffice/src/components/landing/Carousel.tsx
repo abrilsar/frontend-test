@@ -45,12 +45,12 @@ export default function Carousel() {
         {testimonials.map((testimonial, index) => (
           <SwiperSlide
             key={index}
-            className="bg-violet-400 rounded-lg shadow-lg my-6  w-full h-36 aspect-1 sm:aspect-[1/1.5] md:aspect-[1/1.1] lg:aspect-[1/1.3]"
+            className="rounded-none shadow-lg my-6  w-full h-36 aspect-1 sm:aspect-[1/1.5] md:aspect-[1/1.1] lg:aspect-[1/1.3]"
           >
             <img
               src={testimonial.imageUrl}
               alt={testimonial.name}
-              className="w-full h-full object-cover object-center rounded-t-lg"
+              className="w-full h-full object-cover object-center"
             />
             {/* 
               <div className="absolute inset-0 bg-white opacity-30 backdrop-blur-2xl" />

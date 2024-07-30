@@ -1,7 +1,6 @@
 'use client';
 import React, { useState } from 'react';
 import { Carousel } from '@material-tailwind/react';
-import { StarIcon } from '@heroicons/react/20/solid';
 import { sliders } from '@/constants/constats';
 import Starts from '../starts/Starts';
 
@@ -20,12 +19,9 @@ export default function Slider() {
             />
           </div>
         </div>
-        <div
-          id="pre-slider"
-          className="flex items-center justify-center py-4 sm:justify-start sm:pl-10 lg:pl-14 sm:py-10 md:py-14 lg:py-16 w-full sm:w-[60%]"
-        >
+        <div className="flex items-center justify-center py-4 sm:justify-start sm:pl-10 lg:pl-14 sm:py-10 md:py-14 lg:py-16 w-full sm:w-[60%]">
           <Carousel
-            className="w-full sm:max-w-sm md:max-w-[34rem] lg:max-w-2xl"
+            className="w-full sm:max-w-sm md:max-w-[34rem] lg:max-w-2xl overflow-hidden"
             navigation={({ setActiveIndex, activeIndex, length }) => (
               <div className="absolute bottom-0 flex sm:block sm:left-0 w-full justify-center">
                 <div className="flex flex-row gap-x-4">
@@ -50,15 +46,10 @@ export default function Slider() {
             transition={{ duration: 0.4 }}
           >
             {sliders.map((slider, key) => (
-              <div className="flex flex-col items-center sm:items-start lg:max-w-3xl px-4 py-2 mb-6 sm:mb-10 sm:p-0 sm:pr-2">
-                {/* <div className="flex felx-col gap-x-2 pb-4">
-                  {Array.from({ length: 5 }, (_, index) => (
-                    <StarIcon
-                      key={index}
-                      className="size-4 sm:size-5 text-[#FDB022]"
-                    />
-                //   ))}
-                </div> */}
+              <div
+                key={key}
+                className="flex flex-col items-center sm:items-start lg:max-w-3xl px-4 py-2 mb-6 sm:mb-10 sm:p-0 sm:pr-2"
+              >
                 <Starts classNameCustom="pb-4 text-[#FDB022]" number={5} />
                 <h1 className="text-center sm:text-start text-lg font-medium tracking-tight text-white sm:text-xl md:text-2xl lg:text-4xl lg:max-w-[37rem] leading-tight pr-2 lg:pr-0">
                   {slider.text}

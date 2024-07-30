@@ -79,7 +79,7 @@ export default function MenuItem({ name, href, custom }: props) {
                   <div className="aspect-h-9 aspect-w-16 overflow-hidden rounded-md bg-gray-100 ">
                     <img
                       alt="picture chinese"
-                      src="pircutre_chinese.jpg"
+                      src="picture_chinese.jpg"
                       className="object-cover object-center w-full"
                     />
                   </div>
