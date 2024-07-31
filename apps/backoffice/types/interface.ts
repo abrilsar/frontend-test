@@ -39,3 +39,8 @@ export interface StartsProps {
   classNameCustom: string;
   number: number;
 }
+
+export interface ProgressChartProps {
+  radio: number[];
+  width: number;
+}

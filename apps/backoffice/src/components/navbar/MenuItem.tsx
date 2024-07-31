@@ -66,10 +66,10 @@ export default function MenuItem({ name, href, custom }: MenuItemProps) {
                       faster.
                     </p>
                     <div className="flex gap-x-3 pt-3">
-                      <div className="text-sm font-semibold text-gray-700">
+                      <div className="text-sm font-semibold text-gray-700 cursor-pointer">
                         Dismiss
                       </div>
-                      <div className="text-sm font-semibold text-buttonColor-100">
+                      <div className="text-sm font-semibold text-buttonColor-100 cursor-pointer">
                         Changelog
                       </div>
                     </div>

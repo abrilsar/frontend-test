@@ -6,20 +6,27 @@ import ProgressChart from './ProgressChart';
 import { useEffect, useState } from 'react';
 
 export default function MainPage() {
-  const [screenSize, setScreenSize] = useState('');
+  const [radio, setRadio] = useState<number[]>([0, 0, 0]);
+  const [width, setWidth] = useState<number>(0);
+  const sizeCircle = [
+    [55, 45, 35],
+    [80, 65, 50],
+    [120, 100, 80],
+  ];
 
   useEffect(() => {
     const handleResize = () => {
       const screenWidth = window.innerWidth;
 
-      if (screenWidth < 576) {
-        setScreenSize('sm');
-        console.log('holis');
-      } else if (screenWidth < 768) {
-        setScreenSize('md');
-        console.log('chais');
+      if (screenWidth < 640) {
+        setRadio(sizeCircle[0]!);
+        setWidth(6);
+      } else if (screenWidth < 1024) {
+        setRadio(sizeCircle[1]!);
+        setWidth(10);
       } else {
-        setScreenSize('lg');
+        setRadio(sizeCircle[2]!);
+        setWidth(16);
       }
     };
 
@@ -60,8 +67,8 @@ export default function MainPage() {
           {/* AQUIII */}
           <div className="absolute top-[calc(92%-10px)] sm:top-[calc(92%-18px)] md:top-[calc(92%-22px)] lg:top-[calc(90%-10px)] h-[230px] sm:h-4/6 w-[75%] lg:w-[67%] bg-white rounded-md p-5 shadow-xl border border-gray-200">
             <Chart />
-            <div className="hidden lg:block absolute bottom-0 right-[-70px]">
-              <ProgressChart />
+            <div className="block absolute bottom-[-5px] sm:bottom-0  right-[-30px] lg:right-[-70px]">
+              <ProgressChart radio={radio} width={width} />
             </div>
           </div>
         </div>
