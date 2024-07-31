@@ -3,8 +3,35 @@ import Input from '@/components/input/Input';
 import CustomButton from '../custom-button/CustomButton';
 import Chart from './Chart';
 import ProgressChart from './ProgressChart';
+import { useEffect, useState } from 'react';
 
 export default function MainPage() {
+  const [screenSize, setScreenSize] = useState('');
+
+  useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+
+      if (screenWidth < 576) {
+        setScreenSize('sm');
+        console.log('holis');
+      } else if (screenWidth < 768) {
+        setScreenSize('md');
+        console.log('chais');
+      } else {
+        setScreenSize('lg');
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    handleResize(); // Llamar a la función una vez para establecer el tamaño inicial
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <div className="relative isolate px-0">
       <div className="mb-[240px] sm:mb-[350px] md:mb-[370px] lg:mb-[450px]">

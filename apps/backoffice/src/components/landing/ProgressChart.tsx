@@ -9,17 +9,17 @@ export default function ProgressChart() {
         radius={120}
         strokeWidth={16}
         color="violet-800"
-        className="bg-bgColor rounded-full"
-        value={2}
+        className="bg-white rounded-full"
+        value={85}
       >
         <ProgressCircle
-          value={24}
+          value={77}
           radius={100}
           strokeWidth={16}
           color="violet-600"
         >
           <ProgressCircle
-            value={22}
+            value={66}
             radius={80}
             strokeWidth={16}
             color="violet-400"

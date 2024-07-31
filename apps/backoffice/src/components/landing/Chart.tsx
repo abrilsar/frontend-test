@@ -93,6 +93,7 @@ export default function Chart() {
         showLegend={false}
         showYAxis={false}
         showTooltip={false}
+        showAnimation={false}
       />
     </div>
   );
