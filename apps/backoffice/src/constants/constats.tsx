@@ -2,6 +2,9 @@ import {
   ChatBubbleOvalLeftIcon,
   BoltIcon,
   ArrowTopRightOnSquareIcon,
+  BookmarkIcon,
+  PlayCircleIcon,
+  SparklesIcon,
 } from '@heroicons/react/24/outline';
 
 export const integrations = [
@@ -49,24 +52,24 @@ export const integrations = [
   },
 ];
 
-export const Features = [
+export const features = [
   {
     name: 'Share team inboxes',
     description:
       'Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.',
-    icon: <ChatBubbleOvalLeftIcon className="size-6" />,
+    icon: <ChatBubbleOvalLeftIcon className="size-7  text-gray-700" />,
   },
   {
     name: 'Deliver instant answers',
     description:
       'An all-in-one customer service platform that helps you balance everything your customers need to be happy.',
-    icon: <BoltIcon className="size-6" />,
+    icon: <BoltIcon className="size-7  text-gray-700" />,
   },
   {
     name: 'Manage your team with reports',
     description:
       "Measure what matters with Untitled's easy-to-use reports. You can filter, export, and drill down on the data in a couple clicks.",
-    icon: <ArrowTopRightOnSquareIcon className="size-6" />,
+    icon: <ArrowTopRightOnSquareIcon className="size-7 text-gray-700" />,
   },
 ];
 
@@ -223,3 +226,52 @@ export const testimonials = [
     imageUrl: 'picture_red_hat.jpg', // Reemplaza con la URL de la imagen
   },
 ];
+
+export const windowNavbar = {
+  Products: {
+    imageUrl: 'picture_chinese.jpg',
+    optionsNavbar: [
+      {
+        name: 'Blog',
+        description: 'The latest industry news, updates and info.',
+        href: '#',
+        icon: BookmarkIcon,
+      },
+      {
+        name: 'Customer stories',
+        description: 'Learn how our customers are making big changes.',
+        href: '#',
+        icon: SparklesIcon,
+      },
+      {
+        name: 'Video tutorials',
+        description: 'Get up and running on new features and techniques.',
+        href: '#',
+        icon: PlayCircleIcon,
+      },
+    ],
+  },
+  Resources: {
+    imageUrl: 'picture_office.jpg',
+    optionsNavbar: [
+      {
+        name: 'Blog',
+        description: 'The latest industry news, updates and info.',
+        href: '#',
+        icon: BookmarkIcon,
+      },
+      {
+        name: 'Customer stories',
+        description: 'Learn how our customers are making big changes.',
+        href: '#',
+        icon: SparklesIcon,
+      },
+      {
+        name: 'Video tutorials',
+        description: 'Get up and running on new features and techniques.',
+        href: '#',
+        icon: PlayCircleIcon,
+      },
+    ],
+  },
+};

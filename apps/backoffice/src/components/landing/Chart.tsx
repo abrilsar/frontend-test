@@ -1,85 +1,99 @@
 'use client';
-import { LineChart } from '@tremor/react';
+
+import { LineChart, AreaChart } from '@tremor/react';
+import ProgressChart from './ProgressChart';
 
 const chartdata = [
   {
-    date: '   Jan 22',
-    SolarPanels: 2890,
-    Inverters: 2338,
+    date: 'Jan',
+    model1: 10,
+    model2: 60,
+    model3: 100,
   },
   {
-    date: 'Feb 22',
-    SolarPanels: 2756,
-    Inverters: 2103,
+    date: 'Feb',
+    model1: 15,
+    model2: 50,
+    model3: 123,
   },
   {
-    date: 'Mar 22',
-    SolarPanels: 3322,
-    Inverters: 2194,
+    date: 'Mar',
+    model1: 25,
+    model2: 58,
+    model3: 117,
   },
   {
-    date: 'Apr 22',
-    SolarPanels: 3470,
-    Inverters: 2108,
+    date: 'Apr',
+    model1: 37,
+    model2: 64,
+    model3: 124,
   },
   {
-    date: 'May 22',
-    SolarPanels: 3475,
-    Inverters: 1812,
+    date: 'May',
+    model1: 30,
+    model2: 72,
+    model3: 137,
   },
   {
-    date: 'Jun 22',
-    SolarPanels: 3129,
-    Inverters: 1726,
+    date: 'Jun',
+    model1: 34,
+    model2: 100,
+    model3: 123,
   },
   {
-    date: 'Jul 22',
-    SolarPanels: 3490,
-    Inverters: 1982,
+    date: 'Jul',
+    model1: 40,
+    model2: 115,
+    model3: 134,
   },
   {
-    date: 'Aug 22',
-    SolarPanels: 2903,
-    Inverters: 2012,
+    date: 'Aug',
+    model1: 47,
+    model2: 110,
+    model3: 145,
   },
   {
-    date: 'Sep 22',
-    SolarPanels: 2643,
-    Inverters: 2342,
+    date: 'Sep',
+    model1: 52,
+    model2: 119,
+    model3: 137,
   },
   {
-    date: 'Oct 22',
-    SolarPanels: 2837,
-    Inverters: 2473,
+    date: 'Oct',
+    model1: 48,
+    model2: 105,
+    model3: 141,
   },
   {
-    date: 'Nov 22',
-    SolarPanels: 2954,
-    Inverters: 3848,
+    date: 'Nov',
+    model1: 50,
+    model2: 100,
+    model3: 150,
   },
   {
-    date: 'Dec 22',
-    SolarPanels: 3239,
-    Inverters: 3736,
+    date: 'Dic',
+    model1: 100,
+    model2: 108,
+    model3: 135,
   },
 ];
-
-export default function LineChartUsageExample() {
+export default function Chart() {
   return (
-    <>
-      <h3 className="text-lg font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong">
-        Newsletter revenue over time (USD)
+    <div className="md:px-3">
+      <h3 className="text-sm sm:text-lg font-semibold text-gray-900 lg:pt-3 lg:pb-3">
+        User over time
       </h3>
-      <LineChart
-        className="h-72 p-4"
+      <AreaChart
+        className="relative h-44 sm:h-64 lg:h-80 w-full text-xs text-gray-400 opacity-60"
         data={chartdata}
         index="date"
-        yAxisWidth={95}
         categories={['model1', 'model2', 'model3']}
-        colors={['indigo', 'cyan']}
+        colors={['violet-900', 'violet-400', 'purple-600']}
+        yAxisWidth={10}
         showLegend={false}
         showYAxis={false}
+        showTooltip={false}
       />
-    </>
+    </div>
   );
 }

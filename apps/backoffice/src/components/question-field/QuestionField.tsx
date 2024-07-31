@@ -22,7 +22,7 @@ export default function QuestionField({
           <DisclosureButton className="group flex w-full items-center justify-between">
             {({ open }) => (
               <>
-                <span className="text-sm/6 lg:text-base font-medium text-gray-900 ">
+                <span className="text-sm/6 lg:text-lg font-medium text-gray-900 ">
                   {title}
                 </span>
                 {open ? (
@@ -33,7 +33,7 @@ export default function QuestionField({
               </>
             )}
           </DisclosureButton>
-          <DisclosurePanel className="mt-2 text-sm text-gray-500 lg:text-base pr-5">
+          <DisclosurePanel className="mt-2 text-sm text-gray-500 lg:text-base pr-8">
             {description}
           </DisclosurePanel>
         </div>

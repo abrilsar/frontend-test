@@ -55,16 +55,16 @@ export default function Carousel() {
             {/* 
               <div className="absolute inset-0 bg-white opacity-30 backdrop-blur-2xl" />
              */}
-            <div className="absolute bottom-0 w-full p-6">
-              <div className="backdrop-blur-[2px]">
-                <div className="flex flex-col px-8 py-4 bg-white opacity-40 border-[3px]">
+            <div className="absolute bottom-0 w-full p-8 sm:p-6">
+              <div className="backdrop-blur-[8px]">
+                <div className="flex flex-col px-5 py-4 sm:py-8 bg-white bg-opacity-35 border-[1px]  border-slate-300 text-white">
                   {/* <div id="hosad" className="isolate"> */}
                   {testimonial.quote && (
-                    <p className="text-base lg:text-[20px] font-semibold mb-2 lg:mb-6">
+                    <p className="text-base lg:text-[20px] font-semibold mb-2 lg:mb-4">
                       "{testimonial.quote}"
                     </p>
                   )}
-                  <Starts classNameCustom="text-black" number={5} />
+                  <Starts classNameCustom="text-white" number={5} />
                   <h1 className="text-[23px] sm:text-2xl lg:text-3xl font-semibold py-2 sm:py-4">
                     {testimonial.name}
                   </h1>

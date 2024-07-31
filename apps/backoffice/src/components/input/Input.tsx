@@ -18,9 +18,9 @@ export default function Input() {
           required
           placeholder="Enter your email"
           autoComplete="email"
-          className="min-w-0 flex-auto rounded-md px-3.5 py-2.5 border border-gray-300 text-gray-700 shadow-sm  ring-inset focus:ring-2 focus:ring-inset focus:ring-buttonColor-100 sm:text-sm sm:leading-6"
+          className="min-w-0 flex-auto rounded-md px-3.5 py-2.5 border border-gray-300 text-gray-700 shadow-sm  ring-inset focus:ring-2 focus:ring-inset focus:ring-buttonColor-100 text-xs sm:text-sm sm:leading-6"
         />
-        <p className="absolute mt-20 pt-2 text-bgColor font-light text-sm items-start">
+        <p className="absolute mt-20 pt-2 text-bgColor font-light text-xs sm:text-sm items-start">
           We care about your data in our{' '}
           <span className="underline">privacy policy</span>.
         </p>

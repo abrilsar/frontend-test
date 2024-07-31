@@ -21,21 +21,17 @@ export default function Navbar() {
         <div className="flex justify-center">
           <nav
             aria-label="Global"
-            className="flex items-center w-[94%] justify-between h-20 p-4 lg:px-0"
+            className="flex items-center w-[95%] justify-between h-20 py-3 lg:px-0"
           >
             {/* AQUI */}
             <div className="flex items-center lg:flex-3 lg:gap-10">
               <div className="flex gap-3 items-center">
                 <a href="#" className="-m-1.5 p-1.5">
                   <span className="sr-only">Your Company</span>
-                  <img
-                    alt=""
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                    className="h-6 w-auto"
-                  />
+                  <img alt="Logo" src="logo.png" className="size-10" />
                 </a>
-                <p className="text-lg text-gray-900 font-semibold leading-6">
-                  Untitle UI
+                <p className="text-xl text-gray-900 font-semibold leading-6">
+                  Untitled UI
                 </p>
               </div>
               <div className="hidden lg:flex lg:gap-x-6">
@@ -63,14 +59,14 @@ export default function Navbar() {
               <div className="flex gap-6 items-center">
                 <a
                   href="#"
-                  className="text-base font-semibold leading-6 text-gray-800"
+                  className="text-base font-semibold leading-6 text-gray-800 "
                 >
                   Log in
                 </a>
                 <CustomButton
-                  title="Sign Up"
+                  title="Sign up"
                   custom={true}
-                  size="px-4 py-2"
+                  size="px-[17px] py-[9px]"
                 ></CustomButton>
               </div>
             </div>
@@ -85,11 +81,7 @@ export default function Navbar() {
               <div className="flex items-center justify-between">
                 <a href="#" className="-m-1.5 p-1.5">
                   <span className="sr-only">Your Company</span>
-                  <img
-                    alt=""
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                    className="h-8 w-auto"
-                  />
+                  <img alt="logo" src="logo.png" className="size-10" />
                 </a>
                 <button
                   type="button"
@@ -113,10 +105,16 @@ export default function Navbar() {
                       </a>
                     ))}
                   </div>
-                  <div className="py-6">
+                  <div className="flex flex-col py-6 gap-y-3">
                     <a
                       href="#"
-                      className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3  text-base font-semibold leading-7 text-buttonColor-100 hover:bg-gray-50"
+                    >
+                      Sign up
+                    </a>
+                    <a
+                      href="#"
+                      className="-mx-3 block rounded-lg px-3  text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       Log in
                     </a>

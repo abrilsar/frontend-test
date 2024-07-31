@@ -15,11 +15,11 @@ export default function Slider() {
             <img
               alt="picture"
               src={actualImagen}
-              className="object-cover object-top sm:object-center w-full"
+              className="object-cover object-top w-full"
             />
           </div>
         </div>
-        <div className="flex items-center justify-center py-4 sm:justify-start sm:pl-10 lg:pl-14 sm:py-10 md:py-14 lg:py-16 w-full sm:w-[60%]">
+        <div className="flex items-center justify-center py-4 sm:justify-start sm:pl-10 lg:pl-14 sm:py-8 lg:py-[62px] w-full sm:w-[60%]">
           <Carousel
             className="w-full sm:max-w-sm md:max-w-[34rem] lg:max-w-2xl overflow-hidden"
             navigation={({ setActiveIndex, activeIndex, length }) => (
@@ -48,17 +48,20 @@ export default function Slider() {
             {sliders.map((slider, key) => (
               <div
                 key={key}
-                className="flex flex-col items-center sm:items-start lg:max-w-3xl px-4 py-2 mb-6 sm:mb-10 sm:p-0 sm:pr-2"
+                className="flex flex-col items-center sm:items-start lg:max-w-3xl px-4 py-2 mb-6 sm:mb-10 sm:p-0 sm:pr-2 "
               >
-                <Starts classNameCustom="pb-4 text-[#FDB022]" number={5} />
-                <h1 className="text-center sm:text-start text-lg font-medium tracking-tight text-white sm:text-xl md:text-2xl lg:text-4xl lg:max-w-[37rem] leading-tight pr-2 lg:pr-0">
+                <Starts
+                  classNameCustom="pb-4 sm:pb-[29px] text-[#FDB022]"
+                  number={5}
+                />
+                <h1 className="text-center sm:text-start text-lg font-medium tracking-tight text-white sm:text-2xl md:text-3xl lg:text-4xl lg:max-w-[600px] leading-tight pr-2 sm:pr-4 lg:pr-0">
                   {slider.text}
                 </h1>
-                <div className="flex flex-col gap-y-1 mt-2 sm:mt-8 lg:mt-10">
+                <div className="flex flex-col gap-y-1 mt-6 sm:mt-8 lg:mt-10">
                   <h4 className="flex justify-center items-center sm:justify-start text-bgColor font-semibold text-sm md:text-base lg:text-lg">
                     {slider.author}
                   </h4>
-                  <p className="font-normal text-bgColor text-sm lg:text-base">
+                  <p className="font-normal text-subtitleColor-200 text-sm lg:text-base">
                     {slider.position}
                   </p>
                 </div>

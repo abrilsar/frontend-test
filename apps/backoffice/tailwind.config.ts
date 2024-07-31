@@ -11,12 +11,14 @@ module.exports = {
     './src/**/*.{ts,tsx}',
     './node_modules/@tremor/**/*.{ts,tsx}',
   ],
+  transparent: 'transparent',
+  current: 'currentColor',
   theme: {
     container: {
       center: true,
       padding: '2rem',
       screens: {
-        '2xl': '1400px',
+        '2xl': '1430px',
       },
     },
     extend: {
@@ -73,7 +75,7 @@ module.exports = {
         bgColor: '#FFFFFF',
         tremor: {
           brand: {
-            faint: colors.blue[50],
+            faint: '#000000',
             muted: colors.blue[200],
             subtle: colors.blue[400],
             DEFAULT: colors.blue[500],

@@ -21,18 +21,18 @@ export default function Card({
           {customClass ? (
             <div>{customClass}</div>
           ) : (
-            <img alt={name} src={imageUrl} className="size-9" />
+            <img alt={name} src={imageUrl} className="size-10" />
           )}
           {/* <CalendarDaysIcon aria-hidden="true" className="h-6 w-6 text-black" /> */}
         </div>
         <dt className="mt-4 font-semibold text-xl text-gray-900 text-center">
           {name}
         </dt>
-        <dd className="mt-2 leading-7 text-base text-center text-gray-600">
+        <dd className="mt-2 leading-7 text-base text-center text-gray-600 px-4 sm:px-0">
           {description}
         </dd>
         <div className="inline-flex items-center gap-x-1 pt-2.5 text-base font-semibold leading-2 text-secondaryColor">
-          <span>{customClass ? 'Learn More' : 'View integration'}</span>
+          <a href="#">{customClass ? 'Learn More' : 'View integration'}</a>
           <ArrowRightIcon
             aria-hidden="true"
             className="size-5 pt-1 font-bold"

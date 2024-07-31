@@ -1,40 +1,12 @@
 'use client';
 
+import { windowNavbar } from '@/constants/constats';
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react';
 import { ChevronDownIcon, PhoneIcon } from '@heroicons/react/20/solid';
-import {
-  BookmarkIcon,
-  PlayCircleIcon,
-  SparklesIcon,
-} from '@heroicons/react/24/outline';
+import { MenuItemProps } from 'types/interface';
 
-const optionsNavbar = [
-  {
-    name: 'Blog',
-    description: 'The latest industry news, updates and info.',
-    href: '#',
-    icon: BookmarkIcon,
-  },
-  {
-    name: 'Customer stories',
-    description: 'Learn how our customers are making big changes.',
-    href: '#',
-    icon: SparklesIcon,
-  },
-  {
-    name: 'Video tutorials',
-    description: 'Get up and running on new features and techniques.',
-    href: '#',
-    icon: PlayCircleIcon,
-  },
-];
-
-interface props {
-  name: string;
-  href: string;
-  custom: boolean;
-}
-export default function MenuItem({ name, href, custom }: props) {
+export default function MenuItem({ name, href, custom }: MenuItemProps) {
+  const element = windowNavbar[name as keyof typeof windowNavbar] || {};
   return (
     <Popover className="relative">
       <PopoverButton className="inline-flex items-center gap-x-1 text-base font-semibold leading-2 text-gray-600">
@@ -50,7 +22,7 @@ export default function MenuItem({ name, href, custom }: props) {
           <div className="w-screen max-w-2xl flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
             <div className=" grid grid-cols-2">
               <div className="px-4 py-5 row-start-1">
-                {optionsNavbar.map((item) => (
+                {element.optionsNavbar.map((item) => (
                   <div
                     key={item.name}
                     className="group relative flex gap-x-2 rounded-lg px-2 py-3 hover:bg-gray-50"
@@ -64,12 +36,14 @@ export default function MenuItem({ name, href, custom }: props) {
                     <div className="">
                       <a
                         href={item.href}
-                        className="font-semibold text-gray-900"
+                        className="font-semibold text-base text-gray-900"
                       >
                         {item.name}
                         <span className="absolute inset-0" />
                       </a>
-                      <p className="mt-1 text-gray-600">{item.description}</p>
+                      <p className="mt-1 text-sm text-gray-600 pl-3">
+                        {item.description}
+                      </p>
                     </div>
                   </div>
                 ))}
@@ -79,7 +53,7 @@ export default function MenuItem({ name, href, custom }: props) {
                   <div className="aspect-h-9 aspect-w-16 overflow-hidden rounded-md bg-gray-100 ">
                     <img
                       alt="picture chinese"
-                      src="picture_chinese.jpg"
+                      src={element.imageUrl}
                       className="object-cover object-center w-full"
                     />
                   </div>
