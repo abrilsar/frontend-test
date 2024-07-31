@@ -1,11 +1,7 @@
 'use client';
 
-interface TitlesProps {
-  title: string;
-  text: string;
-  subtitle?: string;
-  customFirst?: boolean;
-}
+import { TitlesProps } from 'types/interface';
+
 export default function Title({
   title,
   text,

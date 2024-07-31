@@ -1,11 +1,8 @@
 'use client';
 
 import { StarIcon } from '@heroicons/react/20/solid';
+import { StartsProps } from 'types/interface';
 
-interface StartsProps {
-  classNameCustom: string;
-  number: number;
-}
 export default function Starts({ classNameCustom, number }: StartsProps) {
   return (
     <div className={`flex felx-col gap-x-1 ${classNameCustom}`}>

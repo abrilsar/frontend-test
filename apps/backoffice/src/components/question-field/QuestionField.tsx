@@ -6,11 +6,8 @@ import {
   DisclosurePanel,
 } from '@headlessui/react';
 import { MinusCircleIcon, PlusCircleIcon } from '@heroicons/react/24/outline';
+import { QuestionFieldProps } from 'types/interface';
 
-interface QuestionFieldProps {
-  title: string;
-  description: string;
-}
 export default function QuestionField({
   title,
   description,

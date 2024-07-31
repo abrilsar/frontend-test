@@ -19,7 +19,7 @@ export default function Slider() {
             />
           </div>
         </div>
-        <div className="flex items-center justify-center py-4 sm:justify-start sm:pl-10 lg:pl-14 sm:py-8 lg:py-[62px] w-full sm:w-[60%]">
+        <div className="flex items-center justify-center pt-4 pb-6 sm:justify-start sm:pl-10 lg:pl-14 sm:py-8 lg:py-[62px] w-full sm:w-[60%]">
           <Carousel
             className="w-full sm:max-w-sm md:max-w-[34rem] lg:max-w-2xl overflow-hidden"
             navigation={({ setActiveIndex, activeIndex, length }) => (

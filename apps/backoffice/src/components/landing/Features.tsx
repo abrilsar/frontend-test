@@ -12,7 +12,7 @@ export default function Features() {
         text="Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups."
         subtitle="Features"
       ></Title>
-      <div className="py-16">
+      <div className="pt-16 pb-4 sm:py-16">
         <div className="mx-auto grid max-w-3xl grid-cols-1 gap-x-8 gap-y-12 lg:mx-0 lg:max-w-none sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, key) => (
             <Card

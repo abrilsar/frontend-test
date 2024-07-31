@@ -1,39 +1,6 @@
 'use client';
-// import { Doughnut } from 'react-chartjs-2';
-// import { ArcElement, Tooltip, Legend, Chart as ChartJS } from 'chart.js';
-// ChartJS.register(ArcElement, Tooltip, Legend);
 
-// export default function MultiLayeredDoughnutChart() {
-//   const data = {
-//     labels: [],
-//     datasets: [
-//       {
-//         label: 'First Layer',
-//         data: [320, 50],
-//         backgroundColor: ['#FF6384', '#36A2EB'],
-//         hoverOffset: 4,
-//         weight: 3,
-//         borderWidth: 10,
-//       },
-//       {
-//         label: 'Second Layer',
-//         data: [100, 200],
-//         backgroundColor: ['rgba(255, 99, 132, 0.5)', 'rgba(54, 162, 235, 0.5)'],
-//         hoverOffset: 4,
-//         weight: 3,
-//         borderWidth: 10,
-//       },
-//     ],
-//   };
-
-//   return (
-//     <div className="flex justify-center items-center h-screen">
-//       <Doughnut data={data} />
-//     </div>
-//   );
-// }
-
-import { Card, ProgressCircle } from '@tremor/react';
+import { ProgressCircle } from '@tremor/react';
 
 export default function ProgressChart() {
   return (
@@ -52,7 +19,7 @@ export default function ProgressChart() {
           color="violet-600"
         >
           <ProgressCircle
-            value={23}
+            value={22}
             radius={80}
             strokeWidth={16}
             color="violet-400"

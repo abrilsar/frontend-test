@@ -2,12 +2,8 @@
 
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import React from 'react';
-interface CardProps {
-  name: string;
-  description: string;
-  imageUrl: string;
-  customClass?: React.ReactNode;
-}
+import { CardProps } from 'types/interface';
+
 export default function Card({
   customClass,
   name,

@@ -1,10 +1,6 @@
 'use client';
 
-interface CustomButtonProps {
-  title: string;
-  custom: boolean;
-  size?: string;
-}
+import { CustomButtonProps } from 'types/interface';
 
 export default function CustomButton({
   title,
